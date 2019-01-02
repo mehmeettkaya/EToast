@@ -9,6 +9,5 @@ enum class EToastType {
     WARNING,
     ERROR,
     INFO,
-    DEFAULT,
-    CONFUSING
+    DEFAULT
 }

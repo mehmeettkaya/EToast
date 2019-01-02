@@ -13,9 +13,9 @@ import android.widget.Toast
  */
 
 object EToast {
-    fun makeText(context: Context, message: String, duration: Int, type: EToastType): Toast {
+    fun makeText(context: Context, message: String, duration: EToastDuration, type: EToastType): Toast {
         val toast = Toast(context)
-        toast.duration = duration
+        toast.duration = duration.value
         val layout = LayoutInflater.from(context).inflate(R.layout.layout_etoast, null, false)
         val layoutEToast_toastText = layout.findViewById(R.id.layoutEToast_toastText) as TextView
         val layoutEToast_toastType = layout.findViewById(R.id.layoutEToast_toastType) as LinearLayout
