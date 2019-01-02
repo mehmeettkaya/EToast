@@ -14,6 +14,13 @@
         android:text="Success" />
 
     <Button
+        android:id="@+id/activityMain_btnShowErrorToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Error" />
+
+
+    <Button
         android:id="@+id/activityMain_btnShowWarningToast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

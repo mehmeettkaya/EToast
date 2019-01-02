@@ -17,6 +17,10 @@ class MainActivity : AppCompatActivity() {
             EToast.makeText(this, "Success EToast", EToastDuration.SHORT, EToastType.SUCCESS).show()
         }
 
+        activityMain_btnShowErrorToast.setOnClickListener {
+            EToast.makeText(this, "Error EToast", EToastDuration.SHORT, EToastType.ERROR).show()
+        }
+
         activityMain_btnShowWarningToast.setOnClickListener {
             EToast.makeText(this, "Warning EToast", EToastDuration.SHORT, EToastType.WARNING).show()
         }
